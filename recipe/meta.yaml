@@ -1,4 +1,4 @@
-{% set version = '1.0.4' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/policytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/policytree/policytree_{{ version }}.tar.gz
-  sha256: 98c151b17d7ba075294fe686213c232af98a344a15a8edb2c75531e40ce0bc3c
+  sha256: e6072ae7a7a80efc7393211b3b5d7837729b5c19bdf8b712f3e0fbdfe034dde8
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   rpaths:
     - lib/R/lib/
@@ -51,13 +51,10 @@ test:
 about:
   home: https://github.com/grf-labs/policytree
   license: GPL-3.0-only
-  summary: Learn optimal policies via doubly robust empirical welfare maximization over trees.
-    This package implements the multi-action doubly robust approach of Zhou, Athey and
-    Wager (2018) <arXiv:1810.04778> in the case where we want to learn policies that
-    belong to the class of depth k decision trees.
+  summary: Learn optimal policies via doubly robust empirical welfare maximization over trees. This package implements the multi-action doubly robust approach of Zhou, Athey and Wager (2018) <arXiv:1810.04778> in the case where we want to learn policies that belong to the class of depth k decision trees.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
