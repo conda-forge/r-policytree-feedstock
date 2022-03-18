@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/policytree_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/policytree/policytree_{{ version }}.tar.gz
-  sha256: 4399ddb320134ec86c054569c701d64a9c1a571bf5858ade387919e259a16376
+  sha256: 23319505bf1d2166bbae59951d84e075d48e2d7cdae50a7f0b0512ffc332bc47
 
 build:
   merge_build_host: true  # [win]
