@@ -3,6 +3,7 @@ About r-policytree-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-policytree-feedstock/blob/main/LICENSE.txt)
 
+
 About r-policytree
 ------------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/grf-labs/policytree
 Package license: GPL-3.0-only
 
 Summary: Learn optimal policies via doubly robust empirical welfare maximization over trees. This package implements the multi-action doubly robust approach of Zhou, Athey and Wager (2018) <arXiv:1810.04778> in the case where we want to learn policies that belong to the class of depth k decision trees.
+
 About r-policytree
 ------------------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
