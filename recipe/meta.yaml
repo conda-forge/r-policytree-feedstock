@@ -1,6 +1,5 @@
 {% set version = "1.2.3" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-policytree
@@ -13,8 +12,7 @@ source:
   sha256: eb9619f4fbf58b994f6e69c71ff60c9c1619d61717e69fe648673d52cec31ea8
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -40,7 +38,6 @@ requirements:
     - r-grf >=1.1.0
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-bh
     - r-rcpp
     - r-grf >=1.1.0
